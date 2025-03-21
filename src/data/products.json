@@ -26,7 +26,7 @@
     "title": "CHECKERED SHIRT",
     "price": 180,
     "image": "assets/images/products/checkredShirt1.png",
-    "discount": 0,
+    "discount": 70,
     "rating": {
       "rate": 4.5,
       "total": 5

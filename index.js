@@ -19,8 +19,7 @@ async function initialize() {
     await insertReview('reviewList', "./src/data/reviews.json");
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    
+document.addEventListener("DOMContentLoaded", () => { 
     //Close sign in top message
     const signMsgBtn = document.getElementById("signMsgBtn");
     if (signMsgBtn) {
