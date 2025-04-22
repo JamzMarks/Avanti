@@ -178,6 +178,14 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  color: var(--primary-blue);
+  font-family: var(--font-main);
+}
+.infoWrapper .title{
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px; 
 }
 
 .thumb .info {
@@ -206,7 +214,7 @@
   }
   .navigation {
     height: 96px;
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
   .searchBar {
