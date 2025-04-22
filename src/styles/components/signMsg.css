@@ -1,8 +1,10 @@
 .signMsg {
-  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--primary-blue);
+  color: white;
+  font-size: 14px;
 }
 .signMsg .container {
   max-width: 1220px;

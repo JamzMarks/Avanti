@@ -1,27 +1,10 @@
 
-/* Working brands */
-.workingBrands {
-  width: 100%;
-  min-height: 146px;
-  max-width: var(--max-content-width);
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.workingBrands img{
-  min-height: 21px ;
-}
 /*< Product Section */
 .product {
   justify-content: center;
   align-items: center;
   overflow: hidden;
   text-align: center;
-}
-.product:first-child {
-  padding-bottom: 40px;
 }
 .productList {
   margin: 32px 0;
@@ -32,84 +15,126 @@
     scrollbar-width: none;
     gap:16px;
 } 
-/* Product Section >*/
-/*< bbdStyle - Browse by dress style */
-.bbdStyle {
-  background-color: #f0f0f0;
-  border-radius: 40px;
-  padding: 5% 3%;
+
+.productSpec{
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
 }
-.bbdStyle > .grid-bbd {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  gap: 16px;
-}
-.bbdStyle > .grid-bbd .bbdItem {
+.productImage{
   position: relative;
   width: 100%;
-  height: 190px;
-  border-radius: 30px;
-  background-color: #ffffff;
-  overflow: hidden;
-  border-radius: 20px;
-  transition: 0.3s ease-in-out;
+  background-color: #C2C2C2;
 }
-.bbdStyle > .grid-bbd .bbdItem:hover{
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-.bbdStyle > .grid-bbd .bbdItem > .titleCard {
-  font-weight: 700;
-  position: absolute;
-  top: 16px;
-  left: 24px;
-  z-index: 2;
-  font-size: 24px;
-}
-.bbdItem img{
-  position: absolute;
+.productImage img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: right center;
-  margin-left: 10%;
 }
-.bbdStyle > .grid-bbd > .casual img{
-  transform: scaleX(-1) scale(1.2);
-  object-position: center left !important;;
+.productInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
-.bbdStyle > .grid-bbd > .formal img{
-  object-position: center 30% !important; 
-  transform: scale(1.2);
-  margin-left: 30%;
+.productInfo .name{
+  text-transform: uppercase;
+  align-self: flex-start;
 }
-.bbdStyle > .grid-bbd > .party img{
-  object-position: center center !important;;
+
+.infos{
+  background-color: #DEDEDE;
 }
-.bbdStyle > .grid-bbd > .gym img{
-  object-position: right 35% !important;;
+.infosList{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-@media (min-width: 520px) {
-  .bbdStyle > .grid-bbd {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    gap: 16px;
-  }
-  .bbdStyle > .grid-bbd > .gym img{
-    object-position: right 40% !important;;
-  }
+
+.infoItem{
+  display: flex;
+  gap: 10px;
+  text-align: left;
 }
+.infosListWrapper{
+  text-align: center;
+}
+.infoItem .circle{
+  background-color: #005CFF;
+  border-radius: 50%;
+  min-height: 60px;
+  min-width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomBanner {
+  position: relative;
+  height: 660px;
+}
+
+.bottomBanner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottomBanner .contactMsg {
+  background-color: #005CFF;
+  color: white;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  padding: 1rem; 
+}
+.newsTitle{
+  color: black;
+  text-align: center;
+}
+.newsTitle span{
+  color: blue;
+}
+.newsForm{
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  background-color: #DEDEDE;
+  border-radius: 8px;
+  padding: 3em 1em;
+}
+.blueBtn{
+  background-color: #005CFF;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 14px;
+  width: 100%;
+}
+.termsCheckBox{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.newsForm input[type="checkbox"]{
+  font-size: 12px;
+}
+
 @media (min-width: 768px) { 
-  .container .product:first-child {
-    padding-bottom: 64px;
+  
+}
+
+@media (min-width: 1024px) {
+  .infosWrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px auto;
   }
-  .workingBrands { 
-    gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    min-height: 122px;
+  .infosListWrapper{
+    margin: auto 0;
   }
   .productList {
     max-width: 100%;
@@ -118,37 +143,23 @@
     grid-template-rows: 1fr;
     gap: 26px 16px;
   }
-
-  
-  .bbdStyle > .grid-bbd {
+  .productSpec{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
-  .bbdStyle > .grid-bbd .bbdItem {
-    width: 100%;
-    height: 289px;
-    cursor: pointer;
-  }
-  .formal,
-  .party {
-    grid-column: span 2;
-  }
-  
-}
-
-@media (min-width: 1024px) {
-  .workingBrands img{
-    min-height: 32px ;
+  .productImage{
+    max-height: 500;
   }
   .productList {
     grid-template-columns: repeat(4, 1fr);
     gap: 32px 20px;
   }
-  .bbdStyle > .grid-bbd .bbdItem > .titleCard {
-    top: 25px;
-    left: 36px;
-    font-size: 32px;
+  .newsForm{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    font-size: 12px;
+    padding: 3em 4em;
   }
 }

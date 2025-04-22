@@ -8,231 +8,347 @@
 </head>
 <body id="root">
     <header>
-        <section id="signMsg" class="signMsg blackBackground">
+        <section id="signMsg" class="signMsg">
             <div class="wrapper container">
-                <p class="msg">Sign up and get 20% off to your first order. <a class="sign">Sign Up Now</a></p>
-                <button id="signMsgBtn" type="button" class="close"><img src="assets\images\icons\menu\close.svg"/></button>
+                <p class="msg">Ganhe <span class="price">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom <span class="cupom">DESCONTO10</span></p>
             </div>
         </section>
-        <nav class="navigation">
-            <div class="logo-container">
-                <div class="hamburguerMenu">
-                    <button type="button" class="displayNoneMobile" id="menuButton">
-                        <div class="menuToggle">
-                            <input type="checkbox" id="menuCheckbox"/>
-                            <label for="menuCheckbox" class="menuIcon">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <ul class="menuMobile">
-                              <li class="links"><a href="/shop">Shop</a></li>
-                              <li class="links"><a href="/onsale">On Sale </a></li>
-                              <li class="links"><a href="/news">New Arrivals</a></li>
-                              <li class="links"><a href="/brands">Brands</a></li>
-                            </ul>
-                          </div>
-                    </button>
+        <nav>
+            <div class="navigation">
+                <div class="logo-container">
+                    <div class="hamburguerMenu">
+                        <button type="button" class="displayNoneMobile" id="menuButton">
+                            <div class="menuToggle">
+                                <input type="checkbox" id="menuCheckbox"/>
+                                <label for="menuCheckbox" class="menuIcon">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </label>
+                                <ul class="menuMobile">
+                                <li class="links"><a href="/shop">Shop</a></li>
+                                <li class="links"><a href="/onsale">On Sale </a></li>
+                                <li class="links"><a href="/news">New Arrivals</a></li>
+                                <li class="links"><a href="/brands">Brands</a></li>
+                                </ul>
+                            </div>
+                        </button>
+                    </div>
+                    <img src="assets\images\avanti.svg" alt="Avanti logo">
                 </div>
-                <h1 class="logo">Shop.co</h1>
-            </div>
-            <ul class="navLinks">
-                <li class="links"><a>Shop <span><img src="assets\images\icons\arrows\bottomArrow.svg" alt="bottomArrow"></span> </a></li>
-                <li class="links"><a>On Sale</a></li>
-                <li class="links"><a>New Arrivals</a></li>
-                <li class="links"><a>Brands</a></li>
+                <div class="navBtns">
+                    <div class="searchBar">
+                        <input type="text" placeholder="Search for products..." class="inputFields search">
+                    </div>
+                    <button type="button" class="navBtn searchMobile"><img src="assets\images\icons\search\blackSearch.svg" alt="search"></button>
+                    <button type="button" class="navBtn"><img src="assets\images\icons\user.svg" alt="profile picture"></button>
+                    <button type="button" class="navBtn"><img src="assets\images\icons\cart.svg" alt="cart"></button>
+                </div>
+           </div>
+            <ul class="navLinks container">
+                <li class="links"><a><span></span> Todas as Categorias</a></li>
+                <li class="links"><a>Departamento</a></li>
+                <li class="links"><a>Departamento</a></li>
+                <li class="links"><a>Departamento</a></li>
+                <li class="links"><a>Departamento</a></li>
+                <li class="links"><a>Departamento</a></li>
+                <li class="links"><a>Departamento</a></li>
+                <li class="links"><a>Departamento</a></li>
+                <li class="links"><a>Departamento</a></li>
             </ul>
-            <div class="navBtns">
-                <div class="searchBar">
-                    <input type="text" placeholder="Search for products..." class="inputFields search">
-                </div>
-                <button type="button" class="navBtn searchMobile"><img src="assets\images\icons\search\blackSearch.svg" alt="search"></button>
-                <button type="button" class="navBtn"><img src="assets\images\icons\cart.svg" alt="cart"></button>
-                <button type="button" class="navBtn"><img src="assets\images\icons\user.svg" alt="profile picture"></button>
-            </div>
         </nav>
-        <section class="thumb flexContent">
+        <section class="thumb">
             <div class="container section">
-                <div class="infoWrapper">
-                    <div class="info wrapBalance">
-                        <h2 class="title alignLeft">Find clothes that matches your style</h2>
-                        <p class="paragraph alignLeft">Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-                        <button type="button" class="btns btnBlack">Shop Now</button>
-                    </div>
-                    <div class="numbers">
-                        <dl>
-                            <div class="item">
-                                <dt>200+</dt>
-                                <dd>International Brands</dd>
-                            </div>
-                            <div class="item">
-                                <dt>2,000+</dt>
-                                <dd>High-Quality Products</dd>
-                            </div>
-                            <div class="item">
-                                <dt>30,000+</dt>
-                                <dd>Happy Customers</dd>
-                            </div>
-                        </dl>
-                    </div>
-                </div>
                 <div class="imgWrapper">
-                    <div class="blackStar">
-                        <img class="smaller" src="assets\images\icons\stars\blackStar.svg" alt="smaller star">
-                        <img class="bigger" src="assets\images\icons\stars\blackStar.svg" alt="smaller star">
+                    <img class="thumbImg" src="assets\images\chair.jpg" alt="thumbnail"/>
+                </div>
+                <div class="infoWrapper">
+                    <div class="info">
+                        <h2 class="title">Super <span>Sale</span></h2>
+                        <p class="paragraph">Selected items up to</p>
+                        <p class="offer">50%off</p>
                     </div>
-                    <img class="thumbImg" src="assets\images\thumb\thumb.png" alt="thumbnail"/>
                 </div>
             </div>
         </section>
-        <!-- Working brands -->
-        <section class="blackBackground">
-            <div class="workingBrands marginAuto">
-                <img src="assets\images\brands\versage.svg" alt="versage"/>
-                <img src="assets\images\brands\zara.svg" alt="zara"/>
-                <img src="assets\images\brands\gucci.svg" alt="gucci"/>
-                <img src="assets\images\brands\prada.svg" alt="prada"/>
-                <img src="assets\images\brands\calvinKlein.svg" alt="calvin klein"/>
-            </div>
-        </section> 
     </header>
-
     <main>
-        <div class="container">
-            
-            <!-- new arrivals -->
-            <section class="product section  bottomDivision">
-                <h2 class="title">New arrivals</h2>
-                <div id="newArrivals" class="productList"></div>
-                <button type="button" id="newProducts" class="productListBtn btns btnWhite">View all</button>
-            </section>
-            <!-- Top selling --> 
-            <section class="product section">
-                <h2 class="title">Top selling</h2>
-                <div id="topSelling" class="productList"></div>
-                <button type="button" id="topProducts" class="productListBtn btns btnWhite">View all</button>
-            </section>
-            <!-- Browse by dress style -->
-            <section class="bbdStyle section flexContainer">
-                <h2 class="title wrapBalance alignCenter">Browse by dress style</h2>
-                <div class="grid-bbd">
-                    <div class="bbdItem casual">
-                        <p class="titleCard">Casual</p>
-                        <img src="assets\images\bbdStyle\casual.png" alt="casual clothes">
+        <section class="product-list">
+            <div class="product-header">
+              <h2 class="product-title">Lançamentos</h2>
+              <p class="view-more">Ver mais</p>
+            </div>
+
+            <div class="product-carousel">
+              <div class="carousel-track">
+                <article class="product-card">
+                  <div class="product-image-wrapper">
+                    <span class="product-badge">Novo</span>
+                    <img src="assets/images/product.png" class="product-image" alt="">
+                  </div>
+                  <div class="product-details">
+                    <h3 class="product-name">Lorem ipsum dolor sit amet</h3>
+                    <div class="product-pricing">
+                      <div class="price-original">
+                        <span class="old-price">R$ 100,00</span>
+                        <button class="discount-badge">10% OFF</button>
+                      </div>
+                      <p class="price-current">R$ 79,90</p>
+                      <p class="price-installments">Ou em até 10x de R$ 7,90</p>
                     </div>
-                    <div class="bbdItem formal">
-                        <p class="titleCard">Formal</p>
-                        <img src="assets\images\bbdStyle\formal.png" alt="formal clothes">
+                    <div class="product-button">
+                        <button class="blueBtn">Comprar</button>
                     </div>
-                    <div class="bbdItem party">
-                        <p class="titleCard">Party</p>
-                        <img src="assets\images\bbdStyle\party.png" alt="party clothes">
+                  </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                      <span class="product-badge">Novo</span>
+                      <img src="assets/images/product.png" class="product-image" alt="">
                     </div>
-                    <div class="bbdItem gym">
-                        <p class="titleCard">Gym</p>
-                        <img src="assets\images\bbdStyle\gym.png" alt="gym clothes">
+                    <div class="product-details">
+                      <h3 class="product-name">Lorem ipsum dolor sit amet</h3>
+                      <div class="product-pricing">
+                        <div class="price-original">
+                          <span class="old-price">R$ 100,00</span>
+                          <button class="discount-badge">10% OFF</button>
+                        </div>
+                        <p class="price-current">R$ 79,90</p>
+                        <p class="price-installments">Ou em até 10x de R$ 7,90</p>
+                      </div>
+                      <div class="product-button">
+                          <button class="blueBtn">Comprar</button>
+                      </div>
                     </div>
+                  </article>
+                  <article class="product-card">
+                    <div class="product-image-wrapper">
+                      <span class="product-badge">Novo</span>
+                      <img src="assets/images/product.png" class="product-image" alt="">
+                    </div>
+                    <div class="product-details">
+                      <h3 class="product-name">Lorem ipsum dolor sit amet</h3>
+                      <div class="product-pricing">
+                        <div class="price-original">
+                          <span class="old-price">R$ 100,00</span>
+                          <button class="discount-badge">10% OFF</button>
+                        </div>
+                        <p class="price-current">R$ 79,90</p>
+                        <p class="price-installments">Ou em até 10x de R$ 7,90</p>
+                      </div>
+                      <div class="product-button">
+                          <button class="blueBtn">Comprar</button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-card">
+                    <div class="product-image-wrapper">
+                      <span class="product-badge">Novo</span>
+                      <img src="assets/images/product.png" class="product-image" alt="">
+                    </div>
+                    <div class="product-details">
+                      <h3 class="product-name">Lorem ipsum dolor sit amet</h3>
+                      <div class="product-pricing">
+                        <div class="price-original">
+                          <span class="old-price">R$ 100,00</span>
+                          <button class="discount-badge">10% OFF</button>
+                        </div>
+                        <p class="price-current">R$ 79,90</p>
+                        <p class="price-installments">Ou em até 10x de R$ 7,90</p>
+                      </div>
+                      <div class="product-button">
+                          <button class="blueBtn">Comprar</button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-card">
+                    <div class="product-image-wrapper">
+                      <span class="product-badge">Novo</span>
+                      <img src="assets/images/product.png" class="product-image" alt="">
+                    </div>
+                    <div class="product-details">
+                      <h3 class="product-name">Lorem ipsum dolor sit amet</h3>
+                      <div class="product-pricing">
+                        <div class="price-original">
+                          <span class="old-price">R$ 100,00</span>
+                          <button class="discount-badge">10% OFF</button>
+                        </div>
+                        <p class="price-current">R$ 79,90</p>
+                        <p class="price-installments">Ou em até 10x de R$ 7,90</p>
+                      </div>
+                      <div class="product-button">
+                          <button class="blueBtn">Comprar</button>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="product-card">
+                    <div class="product-image-wrapper">
+                      <span class="product-badge">Novo</span>
+                      <img src="assets/images/product.png" class="product-image" alt="">
+                    </div>
+                    <div class="product-details">
+                      <h3 class="product-name">Lorem ipsum dolor sit amet</h3>
+                      <div class="product-pricing">
+                        <div class="price-original">
+                          <span class="old-price">R$ 100,00</span>
+                          <button class="discount-badge">10% OFF</button>
+                        </div>
+                        <p class="price-current">R$ 79,90</p>
+                        <p class="price-installments">Ou em até 10x de R$ 7,90</p>
+                      </div>
+                      <div class="product-button">
+                          <button class="blueBtn">Comprar</button>
+                      </div>
+                    </div>
+                  </article>
+              </div>
+            </div>
+
+          </section>
+        
+        <section class="infos">
+            <div class="container infosWrapper">
+                <div class="productImage">
+                    <img src="assets\images\canecaFoto.png" alt="product image">
                 </div>
-            </section>
-        </div>
-        <!-- Our happy customers -->
-        <section class="reviewsSection section flexContainer">
-            <div class="slidesTitle">
-                <h3 class="title alignLeft">Our happy customers</h3>
-                <div class="arrows">
-                    <button id="prev" type="button" class="arrowBtn">
-                        <img src="assets\images\icons\arrows\left-arrow.svg" alt="left arrow"/>
-                    </button>
-                    <button id="next" type="button" class="arrowBtn">
-                        <img src="assets\images\icons\arrows\right-arrow.svg" alt="right arrow"/>
-                    </button>
-                </div>  
-            </div>   
-            <div class="reviewList container">
-                <div id="reviewList" class="slides"></div>
+                <div class="infosListWrapper">
+                    <h2>Lorem Ipsum</h2>
+                    <ul class="infosList">
+                        <li class="infoItem">
+                            <span class="circle">
+                                <img src="assets\images\map.svg" alt="map pointer">
+                            </span>
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                        </li>
+                        <li class="infoItem">
+                            <span class="circle">
+                                <img src="assets\images\map.svg" alt="map pointer">
+                            </span>
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                        </li>
+                        <li class="infoItem">
+                            <span class="circle">
+                                <img src="assets\images\map.svg" alt="map pointer">
+                            </span>
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
+        <section class="productSpec container">
+            <div class="productImage">
+                <img src="assets\images\caneca.png" alt="product image">
+            </div>
+            <div class="productInfo">
+                <h2 class="name">Lorem Ipsum</h2>
+                <p class="description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                </p>
+                <p class="description">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+        </section>
+        <section class="bottomBanner">
+            <img src="assets\images\bottomBanner.png" alt="sala Avanti">
+            <div class="contactMsg">
+                <p>Entre em contato conosco e verifique a disponibilidade para sua região!</p>
+            </div>
+        </section>
+        <div class="newsletter container">
+            <h3 class="newsTitle">Cadastre-se na nossa <span>newsletter</span></h3>
+            <form id="newsLetterForm" class="newsForm">
+                    <input id="NLNameInput" class="newsInput inputFields emailInput inputWhite" type="text" placeholder="Digite seu nome" required/>
+                    <input id="NLEmailInput" class="newsInput inputFields emailInput inputWhite" type="email" placeholder="Digite seu e-mail" required/>
+                    <div class="termsCheckBox">
+                        <input type="checkbox" name="terms" id="terms"><label for="terms">Estou de acordo com a <span>Política de Privacidade</span> </label>
+                    </div>
+                    <button class="blueBtn" type="submit">Cadastrar</button>
+            </form>   
+        </div>
     </main>
-
+    
+    
     <footer class="footer"> 
         <div class="container">
-            <form id="newsLetterForm" class="newsletter section blackBackground alignLeft">
-                <h3 class="newsletterTitle">Stay upto date about our latest offers</h3>
-                <div class="inputsContainer">
-                    <input id="NLEmailInput" class="newsInput inputFields emailInput inputWhite" type="email" placeholder="Enter your email adress" required/>
-                    <button class="newsBtn btns btnWhite2" type="submit">Subscribe to Newsletter</button>
-                </div>
-            </form>
-            <section class="upperFooter bottomDivision">
-                <div class="wrapper-logo">
-                    <div class="ls_container">
-                        <p class="logo">Shop.co</p>
-                        <p class="slogan">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
+                <section class="upperFooter">
+                    <div class="wrapper-logo">
+                        <div class="ls_container">
+                            <img src="assets\images\avanti.svg" alt="logo Avanti">
+                        </div>
+                        <div class="socials">
+                            <ul class="socialsList">
+                                <li class="socialsBack">
+                                    <a href="instagram.com"><img src="assets\images\icons\socials\instagram.svg" alt="instagram"></a>
+                                </li>
+                                <li class="socialsBack">
+                                    <a href="facebook.com"><img src="assets\images\icons\socials\facebook.svg" alt="facebook"></a>
+                                </li>
+                                <li class="socialsBack">
+                                    <a href="twitter.com"><img src="assets\images\icons\socials\youtube.svg" alt="youtube"></a>
+                                </li>
+                                <li class="socialsBack">
+                                    <a href="github.com"><img src="assets\images\icons\socials\tiktok.svg" alt="tiktok"></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="socials">
-                        <ul class="socialsList">
-                            <li class="socialsBack">
-                                <a href="twitter.com"><img src="assets\images\icons\socials\twitter.svg" alt="twitter"></a>
-                            </li>
-                            <li class="socialsBack">
-                                <a href="facebook.com"><img src="assets\images\icons\socials\facebook.svg" alt="facebook"></a>
-                            </li>
-                            <li class="socialsBack">
-                                <a href="instagram.com"><img src="assets\images\icons\socials\instagram.svg" alt="instagram"></a>
-                            </li>
-                            <li class="socialsBack">
-                                <a href="github.com"><img src="assets\images\icons\socials\github.svg" alt="Github"></a>
-                            </li>
-                        </ul>
+                    <div class="linksContainer">
+                        <div class="linkItem">
+                            <h4 class="title">Institucional</h4>
+                            <ul class="linkList">
+                                <li class="link"><h5><a href="/about">Sobre Nós</a></h5></li>
+                                <li class="link"><h5><a href="/features">Nossas Lojas</a></h5></li>
+                                <li class="link"><h5><a href="/works">Privacidade e Segurança</a></h5></li>
+                                <li class="link"><h5><a href="/carrer">Termos e Condições</a></h5></li>
+                            </ul>
+                        </div>
+                        <div class="linkItem">
+                            <h4 class="title">Central de ajuda</h4>
+                            <ul class="linkList">
+                                <li class="link"><h5><a href="/support">Fale Conosco</a></h5></li>
+                                <li class="link"><h5><a href="/delivery">Frete e Entrega</a></h5></li>
+                                <li class="link"><h5><a href="/terms">Trocas e Devoluções</a> </h5></li>
+                                <li class="link"><h5><a href="/privacy">Formas de Pagamento</a></h5></li>
+                                <li class="link"><h5><a href="/privacy">FAQ</a></h5></li>
+                            </ul>
+                        </div>
+                        <div class="linkItem">
+                            <h4 class="title">Atendimento</h4>
+                            <ul class="linkList">
+                                <li class="link"><h5><span>Telefone:</span> (00) 1234-5678</h5></li>
+                                <li class="link"><h5><span>Email:</span> exemplo@exemplo.com.br</h5></li>
+                                <li class="link">
+                                    <h5><span>Horário de atendimento:</span>
+                                        <p>Segunda a Sábado: 07h00 às 23h00</p>
+                                        <p>Domingos e Feriados:  07h00 às 21h00</p>
+                                    </h5>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="linksContainer">
-                    <div class="linkItem">
-                        <p class="title">Company</p>
-                        <ul class="linkList">
-                            <li class="link"><a href="/about">About</a></li>
-                            <li class="link"><a href="/features">Features</a></li>
-                            <li class="link"><a href="/works">Works</a></li>
-                            <li class="link"><a href="/carrer">Carrer</a></li>
-                        </ul>
+                    <div class="payments">
+                        <div class="payWay"><img src="assets\images\icons\payments\amex.svg" alt="visa"></div>
+                        <div class="payWay"><img src="assets\images\icons\payments\mastercard2.svg" alt="mastercard"></div>
+                        <div class="payWay"><img src="assets\images\icons\payments\visa.svg" alt="mastercard"></div>
+                        <div class="payWay"><img src="assets\images\icons\payments\hypercard.svg" alt="paypal"></div>
+                        <div class="payWay"><img src="assets\images\icons\payments\elo.svg" alt="applepay"></div>
+                        <div class="payWay"><img src="assets\images\icons\payments\last.svg" alt="googlepay"></div>      
+                        <div class="payWay"><img src="assets\images\icons\payments\paypal2.svg" alt="paypal"></div>
+                        <div class="payWay"><img src="assets\images\icons\payments\pix.svg" alt="applepay"></div>
+                        <div class="payWay"><img src="assets\images\icons\payments\boleto.svg" alt="googlepay"></div>      
                     </div>
-                    <div class="linkItem">
-                        <p class="title">Help</p>
-                        <ul class="linkList">
-                            <li class="link"><a href="/support">Customer Support</a></li>
-                            <li class="link"><a href="/delivery">Delivery Details</a></li>
-                            <li class="link"><a href="/terms">Terms & Conditions</a> </li>
-                            <li class="link"><a href="/privacy">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="linkItem">
-                        <p class="title">FAQ</p>
-                        <ul class="linkList">
-                            <li class="link"><a href="/account">Account</a></li>
-                            <li class="link"><a href="/manage">Manage Deliveries</a></li>
-                            <li class="link"><a href="/orders">Orders</a></li>
-                            <li class="link"><a href="/payments">Payments</a></li>
-                        </ul>
-                    </div>
-                    <div class="linkItem">
-                        <p class="title">Resources</p>
-                        <ul class="linkList">
-                            <li class="link"><a href="ebooks/free">Free eBooks</a></li>
-                            <li class="link"><a href="tutorial-development">Development Tutorial</a></li>
-                            <li class="link"><a href="blog/howto">How to - Blog</a></li>
-                            <li class="link"><a href="youtube.com/playlist">Youtube Playlist</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+                </section>
+            
+            
             <section class="bottomFooter">
-                <p class="copy">Shop.co © 2000-2023, All Rights Reserved</p>
-                <div class="payments">
-                    <div class="payWay"><img src="assets\images\icons\payments\visa.svg" alt="visa"></div>
-                    <div class="payWay"><img src="assets\images\icons\payments\mastercard.svg" alt="mastercard"></div>
-                    <div class="payWay"><img src="assets\images\icons\payments\paypal.svg" alt="paypal"></div>
-                    <div class="payWay"><img src="assets\images\icons\payments\applepay.svg" alt="applepay"></div>
-                    <div class="payWay"><img src="assets\images\icons\payments\googlepay.svg" alt="googlepay"></div>      
+                <p class="copy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make</p>
+                <div class="certifieds">
+                    <div class="cert"><img src="assets\images\icons\logos\lets.svg" alt="let´s encrypt"></div>
+                    <div class="cert"><img src="assets\images\icons\logos\vtexCert.svg" alt="vtex certified"></div>
+                    <div class="cert"><img src="assets\images\icons\logos\avanti.svg" alt="avanti"></div>
+                    <div class="cert"><img src="assets\images\icons\logos\vtex.svg" alt="vtex"></div>
                 </div>
             </section>
         </div>

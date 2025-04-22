@@ -8,11 +8,14 @@
 body {
   font-size: 14px;
   display: grid;
-  gap: 30px;
+  gap: 40px;
   overflow-x: hidden;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
+ul {list-style: none;}
+a {cursor: pointer;text-decoration: none;color: inherit;}
+button {background: none;cursor: pointer;border: none;}
 
 header > .container,
 body main > .container {
@@ -23,36 +26,17 @@ body main > .container {
   display: grid;
   gap: 40px;
 }
-
 main{
-  display: grid;
+display: grid;
   gap: 40px;
 }
 
-ul {
-  list-style: none;
+.container{
+  width: 100%;
+  max-width: var(--max-width);
+  padding: var(--padding-common);
+  margin: var(--margin-auto);
 }
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-}
-
-button {
-  background: none;
-  cursor: pointer;
-  border: none;
-}
-
-.logo {
-  font-family: "IntegralCF";
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 25px;
-  color: var(--text-color);
-}
-
 
 @media (min-width: 768px) {
   body {
@@ -63,11 +47,7 @@ button {
   body main > .container {
     padding: var(--padding-desktop);
   }
-  .logo {
-    font-size: calc(2 * var(--font-size-larger));
-  }
+  .container{
+    padding: var(--padding-desktop);
 }
-
-@media (min-width: 1024px) {
-
 }
