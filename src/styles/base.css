@@ -8,17 +8,26 @@
 body {
   font-size: 14px;
   display: grid;
-  gap: 40px;
+  /* gap: 40px; */
   overflow-x: hidden;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
-
+h1,h2,h3,h4,h5{font-size: inherit; font-weight: inherit;}
 ul {list-style: none;}
 a {cursor: pointer;text-decoration: none;color: inherit;}
 button {background: none;cursor: pointer;border: none;}
-main{display: grid;gap: 40px;}
+main{display: grid;gap: 40px; margin-bottom: 40px;}
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
 .container{
   width: 100%;
   max-width: var(--max-width);
@@ -28,7 +37,7 @@ main{display: grid;gap: 40px;}
 
 @media (min-width: 768px) {
   body {
-    gap: 50px;
+    /* gap: 50px; */
     font-size: var(--font-size-larger);
   }
   .container{

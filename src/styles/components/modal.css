@@ -1,0 +1,65 @@
+.departamentosModal {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .modalWrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px 32px;
+  }
+  
+  .departamentosList {
+    width: 30%;
+    border-right: 1px solid #ccc;
+    padding-right: 24px;
+  }
+  
+  .departamentosList ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .departamentosList li {
+    padding: 12px 0;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .departamentosList li:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .categoriasList {
+    width: 70%;
+    padding-left: 24px;
+  }
+  
+  .categoriasGrupo {
+    display: none;
+  }
+  
+  .categoriasGrupo.active {
+    display: block;
+  }
+  
+  .categoriasGrupo h4 {
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+  }
+  
+  .categoriasGrupo ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    gap: 8px 16px;
+    list-style: none;
+    padding: 0;
+  }
+  

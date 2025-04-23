@@ -1,58 +1,59 @@
 .product-list {
-    padding: 2rem 1rem;
     font-family: Arial, sans-serif;
-  }
+    overflow: hidden;
+}
   
   .product-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
-  }
-  
+  } 
   .product-title {
     font-size: 1.5rem;
     font-weight: bold;
-  }
-  
+  } 
   .view-more {
-    color: #007bff;
+    color: #303030;
     cursor: pointer;
     font-size: 0.9rem;
   }
+
+.product-carousel {
+  position: relative;
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch; 
+  -webkit-overflow-scrolling: touch;
+}
   
-  /* Grid de produtos */
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+  .carousel-track {
+    display: flex;
+    gap: 1rem;
+    scroll-snap-align: start;
   }
   
-  /* Card de produto */
   .product-card {
-    border: 1px solid #ddd;
+    flex: 0 0 calc((100% - 1rem) / 2);
+    scroll-snap-align: start;
+    background: white;
     border-radius: 8px;
-    overflow: hidden;
-    background-color: #fff;
-    transition: transform 0.3s ease;
+    border: 1px solid #ddd;
+    transition: transform 0.3s;
+    min-width: calc((100% - 1rem) / 2);
   }
-  
   .product-card:hover {
     transform: translateY(-5px);
   }
-  
-  /* Imagem e selo */
+
   .product-image-wrapper {
     position: relative;
   }
-  
   .product-image {
     width: 100%;
     display: block;
     object-fit: cover;
     height: 200px;
   }
-  
   .product-badge {
     position: absolute;
     top: 0.5rem;
@@ -64,32 +65,25 @@
     font-size: 0.75rem;
     border-radius: 4px;
   }
-  
-  /* Detalhes do produto */
   .product-details {
     padding: 1rem;
   }
-  
   .product-name {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
   }
-  
-  /* Preços */
   .product-pricing .price-original {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.25rem;
   }
-  
   .old-price {
     text-decoration: line-through;
     color: #777;
     font-size: 0.9rem;
   }
-  
   .discount-badge {
     background-color: #5EC0BE;
     color: white;
@@ -98,60 +92,99 @@
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
   }
-  
   .price-current {
     font-size: 1.25rem;
     color: #000;
     font-weight: bold;
     margin: 0.25rem 0;
   }
-  
   .price-installments {
     font-size: 0.9rem;
     color: #444;
   }
-  .product-list {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 1rem;
-    overflow: hidden;
+  .product-button{
+    margin-top: 10px;
+  }
+  @media (min-width: 1024px) {
+    .product-carousel {
+      overflow: visible; 
+    }
+    .product-card {
+      flex: 0 0 calc((1280px - 4rem) / 5);
+      min-width: unset;
+    }
   }
   
-  .product-carousel {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .carousel-track {
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 98;
+}
+
+.carousel-controls button {
+  background-color: white;
+  color: #007bff;
+  font-size: 1rem;
+  border: 1px solid #007bff;
+  padding: 0.1rem 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: all;
+  transition: all 0.3s ease;
+}
+
+.carousel-controls button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.carousel-dots button {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-dots button.active {
+  background-color: #007bff;
+}
+
+.carousel-track-wrapper {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  min-width: 100%;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .desktop-only {
     display: flex;
-    gap: 1rem;
-    scroll-snap-align: start;
-  }
-  
-  .product-card {
-    flex: 0 0 calc(50% - 0.5rem); 
-    scroll-snap-align: start;
-    background: white;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    transition: transform 0.3s;
   }
 
-  .product-card:hover {
-    transform: translateY(-5px);
+  .carousel-track-wrapper {
+    overflow: hidden;
   }
-  
-  @media (min-width: 768px) {
-    .product-card {
-      flex: 0 0 calc(100% / 3 - 1rem);
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .product-card {
-      flex: 0 0 calc(100% / 5 - 1rem);
-    }
-  }
-  
-  
+}

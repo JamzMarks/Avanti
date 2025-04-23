@@ -16,25 +16,17 @@
   flex-grow: 1;
   text-align: center;
 }
-.signMsg .sign {
-  cursor: pointer;
-  text-decoration: underline;
+.signMsg .price{
+  background-color: purple;
 }
-.signMsg .close {
-  background-color: #000;
-  border: none;
-  align-self: flex-end;
-  display: none;
+.cupom{
+  font-style: italic;
 }
-
 @media (min-width: 768px) {
   .signMsg {
     height: 38px;
   }
   .signMsg .container {
     padding: 0 16px;
-  }
-  .signMsg .close {
-    display: initial;
   }
 }
