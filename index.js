@@ -32,6 +32,7 @@ deptos.forEach((depto) => {
     });
   });
 });
+
 const todasCategorias = document.querySelector(".navLinks .links:first-child");
 const modal = document.getElementById("departamentosModal");
 

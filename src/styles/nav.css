@@ -193,8 +193,7 @@
     "menu logo search blank btns";
     grid-template-columns: auto auto 5fr 2fr auto;
     gap: 40px;
-  }
-   
+  } 
 }
 
 @media (min-width: 1240px) {
