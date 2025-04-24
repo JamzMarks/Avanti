@@ -2,37 +2,48 @@
   background-color: #ffffff;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 0 16px;
-  max-width: 1280px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-areas:
+  "menu logo btns"
+  "search search search";
+  grid-template-columns: auto 1fr auto;
   min-height: 64px;
+  row-gap: 1em;
+  margin: 1em auto;
+}
+
+.logo-container{
+  grid-area: logo;
+  margin: auto;
 }
 .searchBar {
   display: flex;
   width: 100%;
+  grid-area: search;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
-.searchBar input {
-  background-color: #f0f0f0;
-}
-.logo-container,
+
 .navBtns {
   display: flex;
   align-items: center;
   height: 100%;
   gap: 12px;
   transition: 0.2s ease-in;
+  
 }
 .navBtns {
   justify-content: right;
+  grid-area: btns;
 }
 .perfilBtn {
   display: none;
 }
-.logo-container {
-  justify-content: left;
+.hamburguerIcon {
+  /* justify-content: left; */
+  display: block;
+  grid-area: menu;
 }
 .navBtn img {
   align-self: center;
@@ -138,7 +149,7 @@
 .menuToggle input:checked ~ .menuMobile {
   transform: none;
 }
-.searchBar,
+
 .navLinks {
   display: none;
 }
@@ -164,23 +175,7 @@
 .infoWrapper .title span {
   font-weight: 400;
 }
-
 @media (min-width: 768px) {
-  .navigation {
-    padding: 0 20px;
-  }
-}
-@media (min-width: 1024px) {
-  .navigation {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-  .searchBar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-  }
   .perfilBtn {
     display: flex;
     text-align: left;
@@ -190,18 +185,33 @@
   .username span {
     display: block;
     text-wrap: nowrap;
-  }
-
-  .displayNoneMobile {
-    display: none;
-  }
+  } 
 }
+@media (min-width: 1024px) {
+  .navigation {
+    grid-template-areas: 
+    "menu logo search blank btns";
+    grid-template-columns: auto auto 5fr 2fr auto;
+    gap: 40px;
+  }
+   
+}
+
 @media (min-width: 1240px) {
+  .navigation {
+    grid-template-areas: 
+    "logo search blank btns";
+    grid-template-columns: auto 5fr 2fr auto;
+    gap: 40px;
+  }
   .navLinks {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: auto;
     margin: 12px auto;
+  }
+  .displayNoneMobile {
+    display: none;
   }
 }

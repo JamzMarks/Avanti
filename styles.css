@@ -12,18 +12,17 @@
 :root {
   --primary-color: #000;
   --secondary-color: #fff;
-  --primary-blue: #005CFF;
+  --primary-blue: #005cff;
   --text-color: #000;
   --bg-color: #fff;
   --font-size-smaller: 14px;
-  --font-size-larger: 18px; 
+  --font-size-larger: 18px;
   --min-width: 320px;
   --max-width: 1280px;
   --max-content-width: 1240px;
   --padding-common: 0 16px;
   --padding-desktop: 0 20px;
-  --font-main: 'Satoshi';
+  --font-main: "Satoshi";
   --backgroundCcolor-grey: #f0f0f0;
   --margin-auto: 0 auto;
 }
-  

@@ -9,7 +9,7 @@
     justify-content: center; 
     font-size: 16px;
     font-weight: 500;
-    border-radius: 8px;
+    border-radius: 10px;
     width: calc(100% + 2ch);
     max-width: 100%;
     height: 46px;
@@ -21,10 +21,11 @@
     padding-left: 20px;
 }
 .search{
-    background-color: #000;
-    border: none;
-    padding-left: 40px;
-    background: url('../../assets/images/icons/search/search.svg') no-repeat 10px center; 
+    border: 1px solid #DDDDDD;
+    padding-right: 40px;
+    padding-left: 10px;
+    background-color: white;
+    background: url('../../assets/images/icons/search/search.svg') no-repeat 98% center; 
 }
 .inputWhite{
     background-color: #fff;

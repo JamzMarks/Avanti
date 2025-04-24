@@ -17,40 +17,28 @@
         </div>
       </section>
       <nav>
-        <div class="navigation">
-          <div class="logo-container">
-            <div class="hamburguerMenu">
-              <button type="button" class="displayNoneMobile" id="menuButton">
-                <div class="menuToggle">
-                  <input type="checkbox" id="menuCheckbox" />
-                  <label for="menuCheckbox" class="menuIcon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </label>
-                  <ul class="menuMobile">
-                    <li class="links"><a href="#">Departamento</a></li>
-                    <li class="links"><a href="#">Departamento</a></li>
-                    <li class="links"><a href="#">Departamento</a></li>
-                    <li class="links"><a href="#">Departamento</a></li>
-                    <li class="links"><a href="#">Departamento</a></li>
-                    <li class="links"><a href="#">Departamento</a></li>
-                    <li class="links"><a href="#">Departamento</a></li>
-                    <li class="links"><a href="#">Departamento</a></li>
-                  </ul>
-                </div>
-              </button>
+        <div class="navigation container">
+          <div class="hamburguerIcon displayNoneMobile">
+              <div class="menuToggle">
+                <input type="checkbox" id="menuCheckbox" />
+                <label for="menuCheckbox" class="menuIcon" aria-label="Abrir menu de navegação" role="button" tabindex="0">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
             </div>
+          </div>
+          <div class="logo-container">
             <img src="assets\images\avanti.svg" alt="Avanti logo" />
           </div>
+          <div class="searchBar">
+            <input
+              type="text"
+              placeholder="Digite o que você procura"
+              class="inputFields search"
+            />
+          </div>
           <div class="navBtns">
-            <div class="searchBar">
-              <input
-                type="text"
-                placeholder="Search for products..."
-                class="inputFields search"
-              />
-            </div>
             <button type="button" class="navBtn perfilBtn">
               <img src="assets\images\icons\user.svg" alt="profile picture" />
               <div class="username">Olá,<span>Nome Cliente</span></div>
@@ -128,6 +116,19 @@
         </div>
       </nav>
     </header>
+
+    <div id="modalMenu">
+      <ul class="menuMobile">
+        <li class="links"><a href="#">Departamento</a></li>
+        <li class="links"><a href="#">Departamento</a></li>
+        <li class="links"><a href="#">Departamento</a></li>
+        <li class="links"><a href="#">Departamento</a></li>
+        <li class="links"><a href="#">Departamento</a></li>
+        <li class="links"><a href="#">Departamento</a></li>
+        <li class="links"><a href="#">Departamento</a></li>
+        <li class="links"><a href="#">Departamento</a></li>
+      </ul>
+    </div>
 
     <main id="main">
       <section class="thumb">
@@ -672,9 +673,3 @@
     <script src="./index.js" type="module" defer></script>
   </body>
 </html>
-<div>
-  <div>menu hamburguer</div>
-  <img src="logo" alt="">
-  <div>searchbar</div>
-  <div>btns</div>
-</div>
