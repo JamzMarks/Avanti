@@ -1,7 +1,9 @@
 .product-list {
   overflow: hidden;
 }
-
+#productList2{
+  display: none;
+}
 .product-header {
   display: flex;
   justify-content: space-between;
@@ -47,7 +49,6 @@
 
 .product-carousel {
   position: relative;
-  /* overflow-x: visible; */
 }
 
 .carousel-track {
@@ -56,11 +57,14 @@
   scroll-snap-align: start;
   min-width: 100%;
   padding: 0 10px;
-  overflow-x: hidden;
+  overflow-x: auto;
+  scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
-
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
 .product-card {
   scroll-snap-align: start;
   background: white;
@@ -161,6 +165,9 @@
 @media (min-width: 768px) {
   .desktop-only {
     display: flex;
+  }
+  #productList2{
+    display: initial;
   }
 }
 @media (min-width: 1024px) {
