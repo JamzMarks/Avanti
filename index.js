@@ -1,4 +1,4 @@
-import { handleNewsletterSubmit } from "./src/components/newsletterForm.js";
+import { handleNewsletterSubmit } from "./src/newsletterForm.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   //Menu hamburguer button
@@ -23,15 +23,16 @@ document.querySelectorAll("[data-toggle]").forEach((title) => {
 //   modal
 const deptos = document.querySelectorAll(".departamentosList li");
 const categorias = document.querySelectorAll(".categoriasGrupo");
-
-deptos.forEach((depto) => {
-  depto.addEventListener("mouseenter", () => {
-    const target = depto.dataset.depto;
-    categorias.forEach((c) => {
-      c.classList.toggle("active", c.dataset.target === target);
+if (deptos.length && categorias.length) {
+  deptos.forEach((depto) => {
+    depto.addEventListener("mouseenter", () => {
+      const target = depto.dataset.depto;
+      categorias.forEach((c) => {
+        c.classList.toggle("active", c.dataset.target === target);
+      });
     });
   });
-});
+}
 
 const todasCategorias = document.querySelector(".navLinks .links:first-child");
 const modal = document.getElementById("departamentosModal");
