@@ -1,4 +1,4 @@
-import { validateEmail } from "../utils/validator/email-validator.js";
+import { validateEmail } from "./utils/validator/email-validator.js";
 
 export function handleNewsletterSubmit(event){
     event.preventDefault();
