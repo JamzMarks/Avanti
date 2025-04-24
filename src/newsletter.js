@@ -1,5 +1,3 @@
-import { validateEmail } from "./utils/validator/email-validator.js";
-
 export function handleNewsletterSubmit(event){
     event.preventDefault();
     const name = document.getElementById("NLNameInput").value;
@@ -10,4 +8,9 @@ export function handleNewsletterSubmit(event){
     } else {
         alert('Insira um e-mail válido!');
     }
+}
+
+function validateEmail(email) {
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; 
+    return emailPattern.test(email);
 }
