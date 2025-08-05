@@ -5,7 +5,7 @@
 
 ## Visão Geral
 
-**Avanti** é uma landing page criada para apresentar [produto, serviço ou proposta] de forma visual, moderna e responsiva. Ideal para captar leads, apresentar features e direcionar ações como cadastro ou compra.
+**Avanti** é uma landing page criada teste de HTML, CSS E JS da **Avanti**.
 
 ### Funcionalidades principais
 
