@@ -3,18 +3,6 @@
 ## James Souza Marques - jamzmarks@gmail.com
 ---
 
-## ​ Índice
-
-- [Visão Geral](#visión-geral)  
-- [Demonstração](#demonstração)  
-- [Tecnologias](#tecnologias)  
-- [Instalação / Execução Local](#instalação--execução-local)  
-- [Contribuição](#contribuição)  
-- [Licença](#licença)  
-- [Contato](#contato)
-
----
-
 ## Visão Geral
 
 **Avanti** é uma landing page criada para apresentar [produto, serviço ou proposta] de forma visual, moderna e responsiva. Ideal para captar leads, apresentar features e direcionar ações como cadastro ou compra.
